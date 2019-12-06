@@ -3,7 +3,11 @@ import {
     Theater,
     Wallet,
     Mine,
-    Login
+    Login,
+    Search,
+    Details,
+    Singer,
+    Account,
 } from "pages"
 
 
@@ -30,7 +34,8 @@ export const TabBarRoute = [
         path:"/wallet",
         component:Wallet,
         meta:{
-            flag:true
+            // flag:true,
+            requiredAuth:true
         },
         icon:"\ue647",
         text:"票夹"
@@ -52,7 +57,27 @@ export const NoTabBarRoute = [
         path:"/login",
         component:Login,
         meta:{}
-    }
+    },
+    {
+        path:"/search",
+        component:Search,
+        meta:{}
+    },
+    {
+        path:"/details/:id",
+        component:Details,
+        meta:{}
+    },
+    {
+        path:"/singer/:id",
+        component:Singer,
+        meta:{},
+    },
+    {
+        path:"/account",
+        component:Account,
+        meta:{}
+    },
 ];
 
 export const RouteConfig = TabBarRoute.concat(NoTabBarRoute)

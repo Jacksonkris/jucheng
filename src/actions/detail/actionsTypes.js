@@ -1,0 +1,5 @@
+export const Detail = "DETAIL"
+export const push = "PUSH"
+export const reduce = "REDUCE"
+export const deletel = "DELETEL"
+export const cartPush = "CART_PUSH"

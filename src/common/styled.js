@@ -7,5 +7,4 @@ export const PageContainer = styled.div`
     right: 0;
     bottom:0;
     padding-bottom:0.42rem;
-    font-size:0.12rem;
 `
